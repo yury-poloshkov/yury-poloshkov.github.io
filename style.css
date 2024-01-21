@@ -1,36 +1,157 @@
-body{
-    background-color: aquamarine;
+*{
+    padding: 0;
+    margin: 0;
 }
-a {
+@font-face {
+	font-family: 'Gilroy-Bold';
+	src: url('./fonts/gilroy-bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/gilroy-bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/gilroy-bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/gilroy-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/gilroy-bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/gilroy-bold.svg#gilroy-bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'Gilroy-Medium';
+	src: url('./fonts/gilroy-medium.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/gilroy-medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/gilroy-medium.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/gilroy-medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/gilroy-medium.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/gilroy-medium.svg#gilroy-medium') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'Gilroy-Regular';
+	src: url('./fonts/gilroy-regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/gilroy-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/gilroy-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/gilroy-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/gilroy-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/gilroy-regular.svg#gilroy-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'Gilroy-SemiBold';
+	src: url('./fonts/gilroy-semibold.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/gilroy-semibold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/gilroy-semibold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/gilroy-semibold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/gilroy-semibold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/gilroy-semibold.svg#gilroy-semibold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+a{
     text-decoration: none;
- }
- .menu_link{
-    color: cornflowerblue;
-    font-size: 16px;
-    line-height: 20px;
- }
- .main_heading{
-    color: #222222;
-    font-size: 28px;
-    line-height: 36px;
-    font-weight: bold;
- }
- .main_paragraph{
+    padding-left: 16px;
+}
+
+body{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.top_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    padding-top: 32px;
+    padding-bottom: 64px;
+}
+.top_menu_logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.company_logo{
+    width: 35px;
+    height: 40px;
+    flex-shrink: 0;
+    margin-right: 16px;
+}
+.trade_mark{
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
     font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
-    color: #7D7987
- }
- .subheading_l2{
-    color: coral;
+    font-weight: 400;
+    line-height: normal;
+}
+.trade_mark span{
+    color: #F25822;
+}
+.top_menu_links{
+    color: #000;
+    font-family: Gilroy-Medium;
+    font-size: 14px;
     font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 80px;
- }
- .goods_view{
-    border-radius: 50%;
-    border: red 4px double;
-    width: 200px;
- }
+    font-weight: 400;
+    line-height: normal;
+}
+.top_main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.main_header{
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+.top_content_description{
+    color: #888;
+    font-family: Gilroy-Medium;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+.top_buttons{
+    display: flex;
+    align-items: center;
+}
+.start_now{
+    margin-right: 72px;
+    color: #FFF;
+    font-family: Gilroy-Bold;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 140px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+}
+.watch_video{
+    color: #AAA;
+    font-family: Gilroy-Bold;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.top_main_photo{
+    margin-left: 42px;
+}
+.brands{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+.brand{
+    width: 160px;
+    height: 50px;
+    /* flex-shrink: 0; */
+    padding-left: 24px;
+    padding-right: 24px;
+}
