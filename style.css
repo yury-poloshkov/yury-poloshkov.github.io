@@ -40,16 +40,17 @@
 }
 a{
     text-decoration: none;
-    padding-left: 16px;
+    padding: 10px;
 }
 
 body{
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: calc(50% - 587px);
+    padding-right: calc(50% - 587px);
 }
 .top_menu{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center; 
     padding-top: 32px;
@@ -78,6 +79,11 @@ body{
 .trade_mark span{
     color: #F25822;
 }
+.top_menu_links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
 .top_menu_link{
     color: #000;
     font-family: Gilroy-Medium;
@@ -92,8 +98,11 @@ body{
 .top_main{
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 64px;
     justify-content: center;
     align-items: center;
+    flex-shrink: 2;
 }
 .main_header{
     color: #000;
@@ -140,21 +149,18 @@ body{
     font-weight: 400;
     line-height: normal;
 }
-
-.top_main_photo{
-    margin-left: 42px;
-}
 .brands{
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 96px;
     padding-bottom: 96px;
+    gap: 48px;
 }
 .brand{
     width: 160px;
     height: 50px;
-    /* flex-shrink: 0; */
-    padding-left: 24px;
-    padding-right: 24px;
+}
+.special_size{
+    width: 134px;
 }
