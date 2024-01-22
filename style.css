@@ -78,13 +78,16 @@ body{
 .trade_mark span{
     color: #F25822;
 }
-.top_menu_links{
+.top_menu_link{
     color: #000;
     font-family: Gilroy-Medium;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+.top_menu_link span{
+    color: #F25822;
 }
 .top_main{
     display: flex;
