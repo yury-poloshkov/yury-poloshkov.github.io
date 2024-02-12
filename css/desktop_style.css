@@ -265,6 +265,15 @@ footer{
     text-align: center;
     color: #FBFBFB;
 }
+.footer__subscription_background{
+    width: 100%;
+    min-height: 448px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+}
 .footer_subscription_form{
     min-height: 448px;
     width: 100%;
@@ -273,8 +282,7 @@ footer{
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    background-image: url("./img/photo_subscribe.jpg");
-    background-color: transparent;
+    /* background-color: transparent; */
 }
 .footer_subscription_form_element{
     display: flex;
