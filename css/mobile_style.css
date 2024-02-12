@@ -56,4 +56,19 @@ body{
     grid-template-columns: 100%;
     grid-template-rows: repeat(6, 1fr);
 }
+.footer_features{
+    flex-direction: column;
+    padding: 48px;
+}
+.footer_subscription_form{
+    flex-direction: column;
+}
+.footer_subscription_form_element{
+    width: 100%;
+    padding: 24px;
+}
+.footer_bottom{
+    flex-direction: column-reverse;
+    padding: 24px;
+}
 }
