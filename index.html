@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <section class="top__menu">
+        <nav class="top__menu">
             <div class="main__menu">
                 <img src="./img/logo.png" alt="logo" class="logo">
                 <img src="./img/search.svg" alt="search" class="search">
@@ -58,48 +58,48 @@
                     </div>
                 </div>
             </nav>
-        </section>
+        </nav>
         <section class="top__logo">
             <img src="./img/promo_photo.png" alt="promo_photo" class="promo_photo not_mobile">
             <div class="slogan">
                 <img src="./img/slogan_logo.png" alt="slogan_logo" class="slogan_logo">
-                <p class="slogan_text">THE BRAND<br>
-                    <span>OF LUXERIOUS </span>
-                    <span2 class="span2">FASHION</span2>
-                </p>
+                <div>
+                    <h2 class="slogan_text">THE BRAND</h2>
+                    <h3 class="slogan_text_2">OF LUXERIOUS <span>FASHION</span></h3>
+                </div>
             </div>
         </section>
     </header>
-    <section class="offers central">
+    <div class="offers central">
         <article class="item item1">
             <img src="./img/offer1.png" alt="offer1">
             <img src="./img/offer_sadow.png" alt="shadow" class="offer_shadow">
-            <p class="offer_text">
+            <h4 class="offer_text">
                 30% OFF<br><span>FOR WOMEN</span>
-            </p>
+            </h4>
         </article>
         <article class="item item2">
             <img src="./img/offer2.png" alt="offer2">
             <img src="./img/offer_sadow.png" alt="shadow" class="offer_shadow">
-            <p class="offer_text">
+            <h4 class="offer_text">
                 HOT DEAL<br><span>FOR MEN</span>
-            </p>
+            </h4>
         </article>
         <article class="item item3">
             <img class="offer_photo" src="./img/offer3.png" alt="offer3">
             <img src="./img/offer_sadow.png" alt="shadow" class="offer_shadow">
-            <p class="offer_text">
+            <h4 class="offer_text">
                 NEW ARRIVALS<br><span>FOR KIDS</span>
-            </p>
+            </h4>
         </article>
         <article class="item item4">
             <img class="offer4_photo" src="./img/offer4.png" alt="offer4">
             <img src="./img/offer_sadow.png" alt="shadow" class="offer_shadow item4">
-            <p class="offer_text offer_text4">
+            <h4 class="offer_text offer_text4">
                 LUXIROUS & TRENDY<br><span>ACCESORIES</span>
-            </p>
+            </h4>
         </article>
-    </section>
+    </div>
     <main id="catalog" class="catalog central">
         <header class="catalog_header">
             <h2 class="catalog_slogan">Fetured Items</h2>
@@ -107,13 +107,13 @@
                 Shop for items based on what we featured in this week
             </p>
         </header>
-        <section class="products">
+        <div class="products">
             <article class="product product1">
                 <div class="product_photo">
                     <img src="./img/product1.png" alt="product1">
                     <button class="add_to_bascket">
                         <img class="bascket_logo" src="./img/basket.svg" alt="bascket">
-                        <p>Add to Cart</p>
+                        Add to Cart
                     </button>
                 </div>
                 <div class="product_card">
@@ -136,7 +136,7 @@
                     <img class="product_photo2" src="./img/product2.png" alt="product2">
                     <button class="add_to_bascket">
                         <img class="bascket_logo" src="./img/basket.svg" alt="bascket">
-                        <p>Add to Cart</p>
+                        Add to Cart
                     </button>
                 </div>
                 <div class="product_card">
@@ -158,7 +158,7 @@
                     <img src="./img/product3.png" alt="product3">
                     <button class="add_to_bascket">
                         <img class="bascket_logo" src="./img/basket.svg" alt="bascket">
-                        <p>Add to Cart</p>
+                        Add to Cart
                     </button>
                 </div>
                 <div class="product_card">
@@ -180,7 +180,7 @@
                     <img src="./img/product4.png" alt="product4">
                     <button class="add_to_bascket">
                         <img class="bascket_logo" src="./img/basket.svg" alt="bascket">
-                        <p>Add to Cart</p>
+                        Add to Cart
                     </button>
                 </div>
                 <div class="product_card">
@@ -202,7 +202,7 @@
                     <img src="./img/product5.png" alt="product5">
                     <button class="add_to_bascket">
                         <img class="bascket_logo" src="./img/basket.svg" alt="bascket">
-                        <p>Add to Cart</p>
+                        Add to Cart
                     </button>
                 </div>
                 <div class="product_card">
@@ -224,7 +224,7 @@
                     <img src="./img/product6.png" alt="product6">
                     <button class="add_to_bascket">
                         <img class="bascket_logo" src="./img/basket.svg" alt="bascket">
-                        <p>Add to Cart</p>
+                        Add to Cart
                     </button>
                 </div>
                 <div class="product_card">
@@ -241,14 +241,14 @@
                     </p>
                 </div>
             </article>
-        </section>
+        </div>
         <button class="full_catalog_button">
             Browse All Product
         </button>
     </main>
     <footer>
         <div class="footer__background">
-            <section class="footer_features central">
+            <div class="footer_features central">
                 <article class="footer_feature">
                     <img class="footer_feature_logo" src="./img/delivery_logo.svg" alt="delivery logo">
                     <h3 class="footer_feature_title">Free Delivery</h3>
@@ -271,31 +271,31 @@
                         innov tion with
                         extensive models.</p>
                 </article>
-            </section>
+            </div>
         </div>
         <div class="footer__subscription_background" style="background-image: url(./img/photo_subscribe.jpg)">
-            <section class="footer_subscription_form central">
+            <div class="footer_subscription_form central">
                 <article class="footer_subscription_form_element">
                     <img class="subscription__teaser" src="./img/d22362bea3cdf98de9818d4394ba8ed3.png" alt="">
-                    <p class="subscription__teaser__text">
+                    <h5 class="subscription__teaser__text">
                         “Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span>a pulvinar purus
                             condimentum</span>“
-                    </p>
+                    </h5>
                 </article>
                 <form class="footer_subscription_form_element" action="#">
                     <p class="footer_subscription_form_title">SUBSCRIBE<br>
                         <span>FOR OUR NEWLETTER AND PROMOTION</span>
                     </p>
                     <div class="footer_email_fields">
-                        <input class="footer_email_field" type="e-mail" placeholder="Enter Your Email">
+                        <input class="footer_email_field" type="email" placeholder="Enter Your Email">
                         <button class="footer_email_button" type="submit">Subscribe</button>
                     </div>
                 </form>
-            </section>
+            </div>
         </div>
         <div class="footer__background">
             <section class="footer_bottom central">
-                <p class="footer__copyright">© 2022 Brand All Rights Reserved.</p>
+                <h5 class="footer__copyright">© 2022 Brand All Rights Reserved.</h5>
                 <div class="socials__logos">
                     <div class="socials__logo__frame"><img class="socials__logo" src="./img/facebook-f-brands.svg"
                             alt="">
@@ -306,6 +306,7 @@
                     </div>
                     <div class="socials__logo__frame"><img class="socials__logo" src="./img/twitter-brands.svg" alt="">
                     </div>
+                </div>
             </section>
         </div>
     </footer>
