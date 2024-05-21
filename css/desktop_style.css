@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: "Lato", sans-serif;
+    /* box-sizing: border-box; */
 }
 a {
     text-decoration: none;
@@ -245,7 +246,7 @@ header {
     background-color: #f7e4e2;
     display: grid;
     justify-content: center;
-    height: 406px;
+    min-height: 406px;
 }
 .product_photo:hover {
     filter: brightness(80%);
