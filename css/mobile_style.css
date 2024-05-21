@@ -1,0 +1,74 @@
+@media (min-width:320px) and (max-width: 767px) {
+
+.not_mobile{
+    display: none;
+}
+body{
+    max-width: 375px;
+}
+.central{
+    max-width: 360px;
+}
+.top__menu{
+    max-width: 767px;
+    justify-content: space-between;
+    gap: 0;
+}
+.main__menu{
+    margin: 0 16px;
+}
+.top__logo{
+    min-height: 363px;
+}
+.slogan{
+    grid-column: span 2;
+    
+}
+.slogan_logo{
+    max-height: 3.5em;
+}
+.slogan_text{
+    font-size: 38px;
+}
+.slogan_text_2{
+    font-size: 20px;
+}
+.slogan_text_2 span{
+    font-size: 20px;
+}
+.offers{
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 1fr) 111px;
+}
+.item2{
+    grid-row-start: 2;
+}
+.item3{
+    grid-row-start: 3;
+}
+.item4{
+    grid-area: 4 / 1 / 5 / 2;
+}
+.offer4_photo{
+    height: 100%;
+}
+.products{
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, 1fr);
+}
+.footer_features{
+    flex-direction: column;
+    padding: 48px;
+}
+.footer_subscription_form{
+    flex-direction: column;
+}
+.footer_subscription_form_element{
+    width: 100%;
+    padding: 24px;
+}
+.footer_bottom{
+    flex-direction: column-reverse;
+    padding: 24px;
+}
+}
