@@ -12,6 +12,7 @@ const url = '../data/products.json';
 const productsDB = await fetchData(url);
 
 const products = document.querySelector('.products');
+const cart = document.querySelector('.cart');
 
 productsDB.forEach(product => {
     products.insertAdjacentHTML('beforeend', `
@@ -35,8 +36,6 @@ productsDB.forEach(product => {
         </article>
     `)
 });
-
-const cart = document.querySelector('.cart');
 
 products.addEventListener('click', (e) => {
     let productID = null;
@@ -85,3 +84,14 @@ products.addEventListener('click', (e) => {
         }
     };
 });
+
+cart.addEventListener('click', (e) => {
+    if ((e.target.parentElement.matches(".cart__product-delete"))) {
+        e.target.parentElement.parentElement.remove();
+    } else if ((e.target.parentElement.parentElement.matches(".cart__product-delete"))) {
+        e.target.parentElement.parentElement.parentElement.remove();
+    }
+    if (!document.querySelector('.cart__product-card')) {
+        cart.style.display = "none";
+    }
+})
